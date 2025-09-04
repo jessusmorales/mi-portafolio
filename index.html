@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio - Ingeniero Informático</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS compilado por Tailwind -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-primary-700 text-white fixed w-full z-10 top-0 shadow-soft">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-heading">Mi Portafolio</h1>
+      <div class="space-x-6 font-medium">
+        <a href="#sobre-mi" class="hover:text-accent-400">Sobre mí</a>
+        <a href="#habilidades" class="hover:text-accent-400">Habilidades</a>
+        <a href="#proyectos" class="hover:text-accent-400">Proyectos</a>
+        <a href="#hobbies" class="hover:text-accent-400">Hobbies</a>
+        <a href="#contacto" class="hover:text-accent-400">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO con imagen de fondo + overlay -->
+  <section class="relative h-screen flex flex-col justify-center items-center text-center text-white px-6">
+
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0">
+      <img src="recursos/font.jpg" alt="Fondo tecnológico" 
+          class="w-full h-full object-cover opacity-90">
+      <!-- gradiente encima de la imagen -->
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-700/10"></div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="relative z-10">
+      <h2 class="text-5xl font-heading font-extrabold mb-4 animate-bounce">
+        CodeWithJMorales
+      </h2>
+      <p class="text-xl mb-6 opacity-90">
+        Apasionado por la tecnología y buscando oportunidades para crecer profesionalmente
+      </p>
+      <a href="#contacto" class="btn-primary">Contáctame</a>
+    </div>
+  </section>
+
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="card">
+      <p class="text-lg leading-relaxed">
+        Soy estudiante de Ingeniería Informática con interés en el desarrollo de software, redes y seguridad informática. Mi meta es convertirme en un profesional destacado que aporte soluciones innovadoras.
+      </p>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="bg-gray-100 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="card">💻 Programación (C, Java, Python, JS)</div>
+        <div class="card">🌐 Desarrollo Web (HTML, CSS, React)</div>
+        <div class="card">🗄️ Bases de datos (MySQL, PostgreSQL)</div>
+        <div class="card">🔒 Seguridad Informática</div>
+        <div class="card">📡 Redes</div>
+        <div class="card">🤝 Trabajo en equipo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="section-title">Proyectos</h2>
+    <div id="proyectos-grid" class="grid md:grid-cols-2 gap-6">
+      <!-- Aquí JS insertará proyectos -->
+    </div>
+    <button id="cargar-proyectos" class="btn-primary mt-6">Mostrar Proyectos</button>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="bg-gray-100 py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="card">
+        <p class="text-lg">
+          Me apasiona la música 🎶, los videojuegos 🎮, la lectura 📚 y aprender cosas nuevas sobre tecnología 💡.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="section-title">Contacto</h2>
+    <form id="form-contacto" class="space-y-4 card">
+      <input type="text" placeholder="Tu nombre" class="w-full p-3 border rounded-lg" required>
+      <input type="email" placeholder="Tu correo" class="w-full p-3 border rounded-lg" required>
+      <textarea placeholder="Tu mensaje" class="w-full p-3 border rounded-lg" rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+    <p id="mensaje-exito" class="mt-4 text-green-600 font-bold hidden">
+      ✅ ¡Mensaje enviado con éxito!
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary-700 text-white text-center py-6">
+    <p>© 2025 - Mi Portafolio de Informática</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
