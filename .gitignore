@@ -1,5 +1,9 @@
 # Dependencias
 node_modules/
+.next/
+.env
+.env.local
+*.tsbuildinfo
 
 # Archivos de build
 dist/
